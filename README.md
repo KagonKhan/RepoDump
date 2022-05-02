@@ -1,4 +1,4 @@
-# RepoDump
+# RepoLection
 Collection of less notable (un)finished projects
 
 **Table of Contents**  
