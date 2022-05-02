@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="list-group, col-4" style="margin:1rem ">
+  <div class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ book.title }}</h5>
+    </div>
+    <p class="mb-1">{{ book.author }}</p>
+    <small>{{ book.date }}</small>
+  </div>    
+</div>
+
+<a class="btn btn-primary"  role="button"  href="/books/edit/{{book.id}}"> edit </a> &nbsp;
+<a class="btn btn-primary"  role="button"  href="/books/delete/{{book.id}}"> delete </a>
+{% endblock %}

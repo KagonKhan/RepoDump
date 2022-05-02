@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/news/update/{{ news.id }}" method="post">
+    {% csrf_token %}
+        <p>
+            <label for="id_topic">Topic:</label>
+            <input type="text" name="topic" maxlength="100" required id="id_topic" value="{{news.topic}}">
+        </p>
+        <p>
+            <label for="id_text">Text:</label>
+            <input type="text" name="text" maxlength="200" required id="id_text" value="{{news.text}}"></p>
+        <p>
+            <label for="id_author">Author:</label>
+            <input type="text" name="author" maxlength="200" required id="id_author" value="{{news.author}}">
+        </p>
+        <p>
+            <label for="id_create_time">Create Time:</label>
+            <input type="text" name="create_time" maxlength="200" required id="id_create_time" value="{{news.create_time}}" readonly>
+        </p>
+
+    <input type="submit" value="update">
+    
+</form>
+
+{% endblock %}

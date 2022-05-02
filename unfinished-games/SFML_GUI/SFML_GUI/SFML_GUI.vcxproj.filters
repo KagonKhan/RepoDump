@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="User Interface">
+      <UniqueIdentifier>{02cc0dc2-e57a-432e-87b8-a1e5b02e8a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Interface\Buttons">
+      <UniqueIdentifier>{55a585e7-1ccf-4d3c-a189-5df9c2760be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Interface\Buttons\Finished">
+      <UniqueIdentifier>{8cc43377-0a06-4ed5-9fff-579c52169b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Interface\Buttons\Finished\Cleaned up">
+      <UniqueIdentifier>{728f33ff-91dd-4843-b4a3-a0fcf86763ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Interface\Buttons\Finished\Layouts">
+      <UniqueIdentifier>{326b2d60-7458-46e6-915d-ca7954145ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Interface\Buttons\Finished\Layouts\LayoutTypes">
+      <UniqueIdentifier>{afa5681c-ce73-4eec-a46f-3d8e142ad175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User Interface\Buttons\Finished\Cleaned up\I think cleaned up">
+      <UniqueIdentifier>{ff7e0b34-319b-4b90-b6fb-5d53822adcf6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Layout.cpp">
+      <Filter>User Interface\Buttons\Finished\Layouts</Filter>
+    </ClCompile>
+    <ClCompile Include="HorizontalLayout.cpp">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="TableLayout.cpp">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="UnorderedLayout.cpp">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalLayout.cpp">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedButton.cpp">
+      <Filter>User Interface\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="RadioButton.cpp">
+      <Filter>User Interface\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Checkbox.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckboxButton.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="TextButton.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteButton.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowSwitchTextButton.cpp">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Layout.h">
+      <Filter>User Interface\Buttons\Finished\Layouts</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalLayout.h">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="TableLayout.h">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="UnorderedLayout.h">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalLayout.h">
+      <Filter>User Interface\Buttons\Finished\Layouts\LayoutTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedButton.h">
+      <Filter>User Interface\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="RadioButton.h">
+      <Filter>User Interface\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="Checkbox.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckboxButton.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="TextButton.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteButton.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowSwitchTextButton.h">
+      <Filter>User Interface\Buttons\Finished\Cleaned up\I think cleaned up</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourceManager.inl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

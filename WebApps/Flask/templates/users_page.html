@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>
+    Users
+</h1>
+<div>
+    <table id="users">
+        <tr>
+            <th>  ID  </th>
+            <th>  Username  </th>
+            <th>  Password  </th>
+            <th>  Admin  </th>
+        </tr>
+        <tbody>
+            {% for user in users%}
+            <tr>
+                <td><a href="/users/{{user[0]}}"> {{user[0]}}</a>  </td>
+                <td><a href="/users/{{user[0]}}"> {{user[1]}}</a>  </td>
+                <td> {{user[2]}}  </td>
+                <td> {{user[3]}}  </td>
+
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h1>
+    Add User
+</h1>
+
+<form action="/users" method="post" name="user_form">
+    <label for="login"> Login: </label><br>
+    <input type="text" id="login" name="login"><br><br>
+
+    <label for="password"> Password: </label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="admin"> Admin </label><br>
+    <input type="checkbox" id="admin" name="admin"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

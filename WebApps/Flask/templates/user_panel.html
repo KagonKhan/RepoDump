@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block style %}
+<style>
+    #user_panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        border: 0;
+        background-color: cyan;
+        width: 200px;
+        height: 600px;
+    }
+
+    #user_panel a {
+        background-color: red;
+        color: white;
+        padding: 1em 1.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #user_panel a:hover {
+        background-color: #555;
+        cursor: pointer;
+    }
+
+    #user_panel a:active {
+        background-color: black;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="user_panel">
+    <br /><br />
+    {% if currentPage != 'index' %}
+    <a href="/"> Main Page </a>
+    {% endif %}
+    <br /><br />
+
+    <br /><br />
+    <a href="/logout"> Logout </a>
+    <br /><br />
+
+    <br /><br />
+    {% if currentPage != 'users' %}
+    {% if user[3] == True %}
+    <a href="/users"> Users </a>
+    {% endif %}
+    {% endif %}
+
+    {% if currentPage != 'user_page' %}
+    {% if user[3] == False %}
+    <a href="/users/{{user[0]}}"> User </a>
+    {% endif %}
+    {% endif %}
+    <br /><br />
+</div>
+{% endblock %}

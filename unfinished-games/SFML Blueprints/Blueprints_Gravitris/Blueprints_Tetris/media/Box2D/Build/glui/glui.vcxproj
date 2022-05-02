@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1432E26D-8B41-394F-92E8-8307FA0C5D58}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>glui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/glui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D -BS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build --check-stamp-file S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build/glui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/glui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D -BS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build --check-stamp-file S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build/glui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/glui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D -BS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build --check-stamp-file S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build/glui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/glui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D -BS:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build --check-stamp-file S:/Users/sszyn/source/repos/Blueprints_Gravitris/Blueprints_Tetris/media/Box2D/Build/glui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\glui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\algebra3.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\arcball.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_add_controls.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_bitmap_img_data.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_bitmaps.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_button.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_checkbox.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_column.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_commandline.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_control.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_edittext.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_filebrowser.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_list.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_listbox.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_mouse_iaction.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_node.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_panel.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_radio.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_rollout.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_rotation.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_scrollbar.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_separator.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_spinner.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_statictext.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_string.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_textbox.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_translation.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_tree.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_treepanel.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui_window.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\glui.cpp" />
+    <ClCompile Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\glui\quaternion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\ZERO_CHECK.vcxproj">
+      <Project>{DE10E799-F5F6-301E-A6F2-65956F47AC37}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

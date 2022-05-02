@@ -1,0 +1,4 @@
+*.user
+flask_session
+.vs/
+.suo

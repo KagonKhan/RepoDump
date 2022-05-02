@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>
+	{% for usr in user%}
+		Hello {{usr[1]}}!
+	{% endfor %}
+</h1>
+
+<table id="user">
+	<tr>
+		<th>  ID  </th>
+		<th>  Username  </th>
+		<th>  Password  </th>
+		<th>  Admin  </th>
+	</tr>
+	<tbody>
+		{% for usr in user%}
+		<tr>
+			<td> {{usr[0]}}  </td>
+			<td> {{usr[1]}}	 </td>
+			<td> {{usr[2]}}  </td>
+			<td> {{usr[3]}}  </td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+{% endblock %}

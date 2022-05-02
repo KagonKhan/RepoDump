@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% include "messages.html" %}
+
+{% block style %}
+<style>
+    #books {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+    }
+
+        #books td, #books th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #books tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #books tr:hover {
+            background-color: #ddd;
+        }
+
+        #books th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #04AA6D;
+            color: white;
+        }
+</style>
+{% endblock %}
+
+
+{% block content %}
+<h1>    Available books:    </h1>
+
+<table id="books">
+    <tr><th>  Title  </th></tr>
+    <tbody>
+        {% for book in books%}
+        <tr><td>  {{book[0]}}  </td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<h1>
+    Add Book
+</h1>
+
+<form action="/" method="post" name="book_form">
+    <label for="title"> Title: </label><br>
+    <input type="text" id="title" name="title"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+
+{% endblock %}

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Action">
+      <UniqueIdentifier>{97e29cb8-6ae7-4c0b-a73d-2f3ab7944d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{15f01a75-4efb-4653-b007-594ad065e283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Player">
+      <UniqueIdentifier>{a66db0d3-636c-430c-b411-3a0a530fc8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource">
+      <UniqueIdentifier>{75136c4d-3dbf-4c90-b1a6-cd88b0957414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Enemy">
+      <UniqueIdentifier>{8f2dbe9b-768c-4ccd-b723-20b2964d368d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Enemy\Meteor">
+      <UniqueIdentifier>{ad646a19-e963-4683-85cf-dc6c6d330659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Enemy\Saucer">
+      <UniqueIdentifier>{9b09b2ff-86a3-40dd-b0b9-aba525ed0bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Shoot">
+      <UniqueIdentifier>{81de0ded-d940-4090-bdfc-9e232da4b47e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Header Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Header Files\Entity\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Meteor.cpp">
+      <Filter>Header Files\Entity\Enemy\Meteor</Filter>
+    </ClCompile>
+    <ClCompile Include="Saucer.cpp">
+      <Filter>Header Files\Entity\Enemy\Saucer</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Header Files\Entity\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Shoot.cpp">
+      <Filter>Header Files\Shoot</Filter>
+    </ClCompile>
+    <ClCompile Include="Action.cpp">
+      <Filter>Header Files\Action</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionMap.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionTarget.h">
+      <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Saucer.h">
+      <Filter>Header Files\Entity\Enemy\Saucer</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Entity\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Meteor.h">
+      <Filter>Header Files\Entity\Enemy\Meteor</Filter>
+    </ClInclude>
+    <ClInclude Include="Shoot.h">
+      <Filter>Header Files\Shoot</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

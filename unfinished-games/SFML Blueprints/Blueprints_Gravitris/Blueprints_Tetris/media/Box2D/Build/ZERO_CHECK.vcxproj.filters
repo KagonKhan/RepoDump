@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="S:\Users\sszyn\source\repos\Blueprints_Gravitris\Blueprints_Tetris\media\Box2D\Build\CMakeFiles\90a80e17cadcbc3bc080b16a24a12832\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EAF189A9-BB56-3252-8FAE-2E83D89FCE0B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

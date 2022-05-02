@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python+Flask</title>
+    {% block style %}
+    {% endblock %}
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+
+    <!-- stop the forms from resubmitting on refresh -->
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</bodyonload="document.FormName.reset();">
+</html>
