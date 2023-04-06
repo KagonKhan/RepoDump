@@ -7,10 +7,14 @@ CoordMode, Mouse, Screen ; makes mouse coordinates to be relative to screen.
 CoordMode, ToolTip, Screen ; makes tooltip to appear at position, relative to screen.
 
 
-; USAGE: Define as 1 to find out where the swap buttons are (coords), fill in the coords, change to 0, enjoy not having CTS
-firstUse := false
-normalSkillSwap   := {x: 653, y: 1180}
-advancedSkillSwap := {x: 561, y: 1353} 
+
+firstUse 		:= True
+1stMiner		:= {x: 243, y: 387}
+1stResource		:= {x: 471, y: 387}
+2ndMiner		:= {x: 850, y: 393}
+2ndResource		:= {x: 1050, y: 393}
+4thMiner		:= {x: 243, y: 750}
+4thResource		:= {x: 471, y: 750}
 
 
 settimer start, 0
@@ -23,38 +27,19 @@ start:
 		If (firstUse = true) {
 			RenderMousePosition()
 			Continue
-		}
-		Click
-		Sleep 250
-		MouseGetPos xx, yy
-		Click(normalSkillSwap)
-		PressAllSkills()
-		Sleep 150
-		Click(normalSkillSwap)
-		PressAllSkills()
-		Sleep 150
-		Click(advancedSkillSwap)
-		PressAllSkills()
-		MouseMove, xx, yy
+		}	
 	}
 
 return
 
-PressAllSkills(){
-	Send, 1
-	Sleep 5
-	
-	Send, 2
-	Sleep 5
-	
-	Send, 3
-	Sleep 5
 
-	Send, 4
-	Sleep 5
-	
-	Send, 5
+
+Mining(){
+
+
+
 }
+
 
 
 RenderMousePosition(){
@@ -67,4 +52,3 @@ Click(position, delay = 75){
 	Sleep delay
 	;MsgBox % position.x ", " position.y
 }
-*ESC::ExitApp

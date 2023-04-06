@@ -9,14 +9,14 @@ CoordMode, ToolTip, Screen ; makes tooltip to appear at position, relative to sc
 
 ; USAGE: Define as 1 to find out where the swap buttons are (coords), fill in the coords, change to 0, enjoy not having CTS
 ; Measure first, second, eighth pot positions, recommended to choose same spot (fill bar)
-firstUse 		:= false
-goNextPlant 	:= false
-goPreviousPlant := false
+firstUse 		:= False
+goNextPlant 	:= False
+goPreviousPlant := False
 
 
-firstPot  				:= {x: 250, y: 532}
-secondPot 				:= {x: 517, y: 532}
-eighthPot 				:= {x: 250, y: 890}
+firstPot  				:= {x: 233, y: 532}
+secondPot 				:= {x: 500, y: 532}
+eighthPot 				:= {x: 233, y: 890}
 
 harvestAllButton  		:= {x: 310, y: 1080}
 
@@ -50,20 +50,29 @@ start:
 	}
 	
 	if GetKeyState("1"){
-		goNextPlant:= false
+		goNextPlant:= False
 		CycleAllPlants()
 	}
 	if GetKeyState("2"){
-		goNextPlant:= true
+		goNextPlant:= True
 		CycleAllPlants()
 	}
 	if GetKeyState("3"){
-		goNextPlant		:= false
-		goPreviousPlant := true
+		goNextPlant		:= False
+		goPreviousPlant := True
 		CycleAllPlants()
+	}
+	if GetKeyState("4"){
+		ResetFlowers()
+	}
+	if GetKeyState("5"){
+		PipelineFlowers()
 	}
 return
 
+
+
+; Goes through all of the plants and either `1` replants them, `2` proceeds by one, `3` receeds by one
 CycleAllPlants(){
 	global 
 	
@@ -89,10 +98,11 @@ CycleAllPlants(){
 ProcessPot(){
 	global
 		
-	If (goNextPlant = true) {
+	If (goNextPlant) {
+		Click(rightArrow)
 		Click(rightArrow)
 	}	
-	If (goPreviousPlant = true) {
+	If (goPreviousPlant) {
 		Click(leftArrow)
 	}
 	
@@ -106,16 +116,64 @@ ProcessPot(){
 	Click(soilPlusButton)
 }
 
+
+
+; KEY: 4, Goes through all pots and sets them to first flower
+ResetFlowers(){
+	global
+	
+	potDeltaX := secondPot.x - firstPot.x
+	currentPotPosition := {x: firstPot.x, y: firstPot.y}
+	
+	Loop 2 { ;rows
+		Loop 7 { ;columns
+			Click(currentPotPosition)
+			
+			Loop 30 {
+				Click(leftArrow, 10)
+			}
+			currentPotPosition.x += potDeltaX
+		}
+		currentPotPosition := {x: eighthPot.x, y: eighthPot.y}
+	}
+}
+
+
+
+; KEY: 5, Sets up a pipeline (1st pot 1st flower, 2nd pot 2nd flower, etc). Assumes pots are empty
+PipelineFlowers(){
+	global
+
+	potDeltaX := secondPot.x - firstPot.x
+	currentPotPosition := {x: firstPot.x, y: firstPot.y}
+	
+	Loop 2 { ;rows
+		row := A_Index
+		
+		Loop 7 { ;columns
+			Click(currentPotPosition)
+			flowerIndex:= (row-1)*7 + A_Index - 1
+			
+			Loop %flowerIndex% {
+				Click(rightArrow)
+			}
+			currentPotPosition.x += potDeltaX
+		}
+		currentPotPosition := {x: eighthPot.x, y: eighthPot.y}
+	}
+}
+
+
+
 RenderMousePosition(){
 	MouseGetPos xx, yy
 	ToolTip %xx%`, %yy%, %xx%, %yy%
 }
 
-Click(position){
+Click(position, delay = 75){
 	MouseClick, left, position.x, position.y
-	Sleep 25
+	Sleep delay
 	;MsgBox % position.x ", " position.y
 }
-
 
 *ESC::ExitApp

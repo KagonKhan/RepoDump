@@ -8,9 +8,12 @@ CoordMode, ToolTip, Screen ; makes tooltip to appear at position, relative to sc
 
 
 ; USAGE: Define as 1 to find out where the swap buttons are (coords), fill in the coords, change to 0, enjoy not having CTS
-firstUse := false
-normalSkillSwap   := {x: 653, y: 1180}
-advancedSkillSwap := {x: 561, y: 1353} 
+; Measure first, second, eighth pot positions, recommended to choose same spot (fill bar)
+
+
+firstUse 		:= False
+delve  			:= {x: 2389, y: 1119}
+bag 			:= {x: 777, y: 1290}
 
 
 settimer start, 0
@@ -23,39 +26,26 @@ start:
 		If (firstUse = true) {
 			RenderMousePosition()
 			Continue
+		}	
+		else {
+			Spelunk()
 		}
-		Click
-		Sleep 250
-		MouseGetPos xx, yy
-		Click(normalSkillSwap)
-		PressAllSkills()
-		Sleep 150
-		Click(normalSkillSwap)
-		PressAllSkills()
-		Sleep 150
-		Click(advancedSkillSwap)
-		PressAllSkills()
-		MouseMove, xx, yy
-	}
-
 return
-
-PressAllSkills(){
-	Send, 1
-	Sleep 5
-	
-	Send, 2
-	Sleep 5
-	
-	Send, 3
-	Sleep 5
-
-	Send, 4
-	Sleep 5
-	
-	Send, 5
 }
 
+
+
+return
+	
+Spelunk(){
+global
+	Click(delve, 1000) ; extract
+	Loop 10{
+		Click(bag, 10) ; loot bags
+	} Sleep 2000
+	Click(delve, 3000) ; delve again
+}
+	
 
 RenderMousePosition(){
 	MouseGetPos xx, yy
@@ -67,4 +57,5 @@ Click(position, delay = 75){
 	Sleep delay
 	;MsgBox % position.x ", " position.y
 }
+
 *ESC::ExitApp
